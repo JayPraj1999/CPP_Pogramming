@@ -42,9 +42,18 @@ class bank
 			
 				cout<<"How Much do you want to Withdraw ? ";
 				cin>>val;
-				balance = balance - val;
-			
-				cout<<"Your Available balance is : "<<balance<<endl<<endl;
+				if(balance >= val)
+				{
+				
+					balance = balance - val;
+					cout<<"Your Available balance is : "<<balance<<endl<<endl;
+				}
+				else 
+				{
+					cout<<"Insufficient Balance."<<endl;
+					cout<<"Your Current balance is : "<<balance<<endl<<endl;
+				}
+				
 			}
 			else
 			{
