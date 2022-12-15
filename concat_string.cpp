@@ -21,7 +21,7 @@ class concat
 		
 		concat operator +(concat a)
 		{
-			a.final =	a.data1() + a.data2() ;
+			a.final =	a.data1()+ a.data2() ;
 		}
 		
 		void diaplay()

@@ -27,7 +27,7 @@ int main()
 {
 	unary obj;
 	obj.getvalue(100);
-	++obj;
+	obj++;
 	obj.display();
 	
 	return 0;
