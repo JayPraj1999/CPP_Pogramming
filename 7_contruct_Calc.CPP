@@ -1,10 +1,12 @@
-#include<iostream.h>
-#include<conio.h>
+#include<iostream>
+using namespace std;
 
 int ans;
 class add
 {
-	public : add(int a, int b)
+	public : 
+	
+	add(int a, int b)
 	{
 		ans = a + b;
 		cout<<"Addition = "<<ans<<endl;
@@ -13,7 +15,9 @@ class add
 
 class sub
 {
-	public : sub(int a, int b)
+	public : 
+	
+	sub(int a, int b)
 	{
 		ans = a - b;
 		cout<<"Subtraction = "<<ans<<endl;
@@ -22,16 +26,20 @@ class sub
 
 class multi
 {
-	public : multi(int a, int b)
+	public : 
+	
+	multi(int a, int b)
 	{
 		ans = a * b;
 		cout<<"Multiplication = "<<ans<<endl;
 	}
 };
 
-class div
+class Div
 {
-	public : div(int a, int b)
+	public : 
+	
+	Div(int a, int b)
 	{
 		ans = a / b;
 		cout<<"Division = "<<ans<<endl;
@@ -39,13 +47,13 @@ class div
 	}
 };
 
-void main()
+int main()
 {
-	clrscr();
+	Div obj(8,2);
 	add aobj(5,5);
 	sub sobj(7,3);
 	multi mobj(4,5);
-	div dobj(8,2);
 
-	getch();
+
+	return 0;
 }
